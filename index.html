@@ -1,22 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Totally Semantic Title</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1530-Assignment2-TrintinAffleck</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="./js/main.js" defer></script>
+    </head>
 
-		<meta name="author" content="Your Name Here">
-		<meta name="description" content="This is a basic index template; therefore, the content of this tag will need to be updated later.">
+    <body>
+        <header>
+            <h1>Blog</h1>
+            <img src="./img/svg/menu.svg" alt="Menu button" id="menu-button" />
+            <nav>
+                <ul>
+                    <li>
+                        About
+                        <ul>
+                            <li><a href="#">Bio</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">In the Media</a></li>
+                        </ul>
+                    </li>
+                    <img src="./img/svg/chevron.svg" alt="Down Arrow" />
+                    <li>
+                        Things to Do
+                        <ul>
+                            <li><a href="#">Good Food</a></li>
+                            <li><a href="#">Local Travel</a></li>
+                            <li><a href="#">Arts & Culture</a></li>
+                            <li><a href="#">Family</a></li>
+                            <li><a href="#">Festivals</a></li>
+                        </ul>
+                    </li>
+                    <img src="./img/svg/chevron.svg" alt="Down Arrow" />
+                    <li>
+                        Contact
+                        <ul>
+                            <li><a href="#">Video Blog</a></li>
+                        </ul>
+                    </li>
+                    <img src="./img/svg/chevron.svg" alt="Down Arrow" />
+                </ul>
+            </nav>
+        </header>
 
-		<!-- Google Fonts -->
+        <main>
+            <div class="food">
+                <div class="hero-text">
+                    <h2>Good Food</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Dolorum, sed exercitationem ducimus a at magnam
+                        facere ipsa, id vero ratione aliquid sunt consequatur
+                        totam non iusto quas eius esse vitae.
+                    </p>
+                    <button>Discover</button>
+                </div>
+                <img
+                    src="./img/svg/platter-2009590_1920.svg"
+                    alt="Platter of food"
+                />
+                <img
+                    src="./img/svg/breakfast-690128_1920.svg"
+                    alt="Table with breakfast foods on it"
+                />
+            </div>
+            <div class="travel">
+                <div class="hero-text">
+                    <h2>Local Travel</h2>
+                    <button>Discover</button>
+                </div>
+                <img
+                    src="./img/svg/water-3271579_1920.svg"
+                    alt="River with a background of mountains"
+                />
+            </div>
+            <div class="cards-section">
+                <img src="./img/svg/heart.svg" alt="Heart Logo" id="heart-logo" />
+                <h2>Stuff</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img
+                                src="./img/svg/tacos-al-pastor-4351813_1920.svg"
+                                alt="Tacos Platter"
+                            />
+                        </div>
+                        <h3>Fresh Prep</h3>
+                        <p>
+                            Sign up today to enjoy the Fresh Prep difference.
+                            Enjoy a more convenient and quality meal kit service
+                            delivered to your door.
+                        </p>
+                        <p>
+                            Use our discount code for 10% off your first
+                            purchase.
+                        </p>
+                        <a href="#">VISIT FRESH PREP</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img
+                                src="./img/svg/farmers-market-colorful-carrots.svg"
+                                alt="Carrots"
+                            />
+                        </div>
+                        <h3>Farmers' Market</h3>
+                        <p>
+                            Edmontonians love farmers' markets and you should
+                            too. You'll find everything from fresh local produce
+                            to hand-made jewellery, clothing, art and unique
+                            home goods. There is a market for every part of the
+                            city, and we've got you covered with this list of
+                            favourites.
+                        </p>
+                        <a href="#">CHECKOUT THE LIST</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img
+                                src="./img/svg/inside-the-brewery.svg"
+                                alt="A Brewery"
+                            />
+                        </div>
+                        <h3>Cabin Brewery</h3>
+                        <p>
+                            Our brewery has a bright and family-friendly tasting
+                            room, a retail area and small patio, open 6 days a
+                            week.
+                        </p>
+                        <p>
+                            We are super proud of our beautiful brewery and love
+                            to show it off. Book a tour to learn more about
+                            where we came from and how we make our delicious
+                            beer.
+                        </p>
+                        <a href="#">BOOK A TOUR</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img
+                                src="./img/svg/frothy-hot-chocolate-in-mug.svg"
+                                alt="A cup of hot Chocolate"
+                            />
+                        </div>
+                        <h3>Hot Chocolate Bombs</h3>
+                        <p>
+                            Hot Chocolate Bombs are chocolate spheres filled
+                            with homemade chocolate milk powder and marshmallows
+                            that are put into a mug with hot milk for a
+                            delicious cup of hot cocoa. Try my Best Homemade Hot
+                            Cocoa for another rich and cramy hot chocolate
+                            recipe.
+                        </p>
+                        <a href="#">MAKE THIS RECIPE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-info">
+                    <h2>Video Blog</h2>
+                    <p>
+                        Follow me on my Youtube channel to get news, discounts
+                        and more.
+                    </p>
+                    <button>Discover</button>
+                </div>
+                <img src="./img/svg/camera-690163_1920.svg" alt="Camera" />
+            </div>
+        </main>
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
-		</div>
-	</body>
+        <footer>
+            <div class="footer-link-container">
+                <span>About</span>
+                <a href="#">Bio</a>
+                <a href="#">Services</a>
+                <a href="#">In the Media</a>
+            </div>
+            <div class="footer-link-container">
+                <span>Things to do</span>
+                <a href="#">Good Food</a>
+                <a href="#">Local Travel</a>
+                <a href="#">Arts & Culture</a>
+                <a href="#">Family</a>
+                <a href="#">Festivals</a>
+            </div>
+            <div class="footer-link-container">
+                <span>Contact</span>
+                <a href="#">Video Blog</a>
+            </div>
+            <div class="footer-socials">
+                <img src="./img/svg/facebook.svg" alt="Facebook Logo" />
+                <img src="./img/svg/instagram.svg" alt="Instagram Logo" />
+                <img src="./img/svg/youtube.svg" alt="Youtube Logo" />
+                <img src="./img/svg/linkedin.svg" alt="LinkedIn Logo" />
+            </div>
+        </footer>
+    </body>
 </html>
