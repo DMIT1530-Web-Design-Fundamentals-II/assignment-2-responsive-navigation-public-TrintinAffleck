@@ -1,6 +1,48 @@
 :root {
     --gray: #404040;
+    --local-green: #727812;
+    --footer-links-white: #cbc9c9;
 }
+
+
+@font-face {
+    font-family: 'CooperHewitt-Heavy';
+    src: url(../assignment-two-responsive-nav-assets/CooperHewitt-Heavy.ttf);
+}
+
+/* Fonts */
+header > h1,
+ul > li,
+.hero-text > h2,
+.cards-section > h2,
+.card > h3,
+.blog-info > h2 {
+    font-family: 'CooperHewitt-Heavy';
+}
+
+ul > li > ul > li > a,
+.hero-text > p,
+button,
+.card,
+.blog > p,
+.footer-link-container
+{
+    font-family: 'Merriweather Sans', sans-serif
+}
+
+header > p
+
+header > h1 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+
 
 header > img,
 ul ul {
@@ -68,12 +110,26 @@ header > nav > ul > li:hover > ul {
     top: 7.5%;
 }
 
-.food, .travel {
-    display: flex;
-    margin: 3rem;
+.food {
+    height: 34.0625rem;
+    margin: 1rem 0;
 }
 
-.food > img:first-child {
+.travel {
+    height: 26.4375rem;
+}
+
+.food, .travel {
+    display: flex;
+    margin: 3rem auto;
+    gap: 4rem;
+}
+
+.hero-text > h2 {
+    font-size: 5rem;
+}
+
+.platter-image {
     height: 20.1875rem;
     width: 30.3125rem;
     position: relative;
@@ -85,35 +141,88 @@ header > nav > ul > li:hover > ul {
     height: 16.125rem;
     position: relative;
     z-index: -1;
-    right: 3rem;
+    right: 19rem;
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
 }
 
+.hero-text > button {
+    background-color: var(--gray);
+    color: #f2f2f2;
+}
+
+.hero-text > h2 > span {
+    color: var(--local-green);
+}
 .cards-section {
     width: 100vw;
 }
+.cards-section > h2 {
+    font-size: 8rem;
+    margin-bottom: 0;
+    
+}
+.cards-section > h2 > img {
+    position: relative;
+    right: 90%;
+    bottom: 90%;
+}
+
 .cards {
     display: grid;
     gap: 1.25rem;
-    padding: 1rem;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 23% 23% 23% 23%;
 }
 
 .card-img-container img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 90%;
+}
+
+.card {
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-img-container {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 30rem;
+    z-index: -1;
+}
+.card > h3 {
+    color: #b29124;
+    font-size: 2.625rem;
+    position: relative;
+    bottom: 1.75rem;
+    
+}
+
+.card > h3
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card > p {
+    margin-top: 0;
 }
 
 .blog {
     width: 80%;
     height: 28.8125rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 .blog-info {
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .blog-info > h2 {
@@ -127,6 +236,16 @@ button {
     font-size: 1rem;
 }
 
+button {
+    height: 3rem;
+    width: 11.625rem;
+    border-radius: 2rem;
+}
+
+.blog-info > button {
+    color: #707070;
+    background-color: #f1f1f1;
+}
 
 .camera {
     position: relative;
@@ -136,15 +255,29 @@ button {
 }
 footer {
     display: flex;
+    padding: 2rem;
+    gap: 3rem;
 }
 
 .footer-link-container {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
-.footer-socials {
+.footer-link-container > span
+.blog-info > h2,
+.blog-info > p {
+    color: #f2f2f2;
+}
+
+.footer-link-container > a {
+    color: var(--footer-links-white);
+}
+.footer-socials,
+.footer-links {
     display: flex;
+    gap: 1rem;
 }
 
 .footer-socials > img {
@@ -164,36 +297,144 @@ footer {
         display: block;
         position: absolute;
         width: 100%;
+        margin: 0 0.5rem 0.4rem;
         height: 90%;
-        top: 8%;
-        left: 30%;
+        top: 11%;
+        left: 0%;
         z-index: 3;
-        background-color: var(--grey);
+        background-color: var(--gray);
+        border: red solid 1px;
+    }
+
+    .active > ul {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 0rem;
+        align-items: flex-end;
+
     }
 
     .active > ul > li > ul {
-        background-color: var(--gray);
         display: block;
         position: relative;
         top: 99%;
         padding: 0.2rem;
     }
     img {
-        width: 150px;
-    }
-    .cards {
-        grid-template-columns:100vw;
+        width: 9.375rem;
     }
 
+    #menu-button {
+        height: 100%;
+        width: 5rem;
+    }
+
+    .food, .travel {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .platter-image {
+        height: 8.9375rem;
+        width: 13.3125rem;
+        left: 20%;
+        
+    }
+    
+    .travel > img {
+        align-items: end;
+        width: 13.4375rem;
+        height: 20.1875rem;
+    }
+
+    .food > img:last-child {
+        width: 16.375rem;
+        height: 10.875rem;
+        position: relative;
+        right: 0;
+        bottom: 100%;
+    }
+    .hero-text > h2 {
+        margin: auto 0;
+    }
+
+    .cards {
+        grid-template-columns:100%;
+    }
+
+    .card {
+        height: 45rem;
+        text-align: center;
+    }
     .card-img-container > img {
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+    .card-img-container {
+        width: 100%;
+    }
+
+    .blog-info > h2 {
+        font-size: 5.625rem;
+    }
+
+    .blog {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .camera {
+        position: static;
+        width: 100%;
+        height: 12.5625rem;
+    }
+
+    
+    footer {
+        flex-wrap: wrap;
     }
 }
 
 @media screen and (min-width: 820px) and (max-width: 1350px) {
     /* CSS rules for medium screens (820px - 1350px) */
     .cards {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 45%;
+    }
+    .card {
+        height: 36rem;
+    }
+
+    .blog-info > h2 {
+        font-size: 5.625rem;
+    }
+    .blog-info {
+        margin-left: 1rem;
+    }
+
+    .camera {
+        left: 72%;
+    }
+
+    .blog {
+        width: 60%;
+        height: 27.375rem;
+        
+    }
+
+    footer, header {
+        width: 97%;
+    }
+
+
+}
+
+@media screen and (min-width: 1350px) {
+    .cards-section > h2 {
+        margin-left: 10rem;
     }
 }
